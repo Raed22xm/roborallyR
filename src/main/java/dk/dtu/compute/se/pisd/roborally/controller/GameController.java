@@ -59,15 +59,15 @@ public class GameController {
     // this current player should be taken new place when you press on new filde or space
     //is depends on what be call
      current.setSpace(space);
-     // I want to know the number of current player: becouse i will use it to nest player
-    // how we get the number of curret player ?
+     // I want to know the number of current player: because i will use it to nest player
+    // how we get the number of current player ?
     // we get from board
-    // is happen like that is e craete new object call number and is int type
+    // is happen like that is e create new object call number and is int type
     int number = board.getPlayerNumber(current);
     // now we know where is our player and what is his number and he can get new place
     // what about new player after our current player
     //  create next play what happen after this current player
-    // so that is whay we shoulde think about new player
+    // so that is why we should think about new player
      Player next = board.getCurrentPlayer( (number+1)% board.getPlayerNumber());
      // after we get current player number we let him get also place
     // tal board there is current player
